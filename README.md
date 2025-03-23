@@ -6,6 +6,7 @@ A lightweight web application built with Flask that performs basic mathematical 
 
 ## 📁 Project Structure
 
+hjbsk-build_deploy_app_flask/ ├── server.py # Main Flask app ├── Maths/ │ └── mathematics.py # Functions for basic arithmetic ├── templates/ │ └── index.html # Home page ├── static/ # Static files (CSS, JS, images) ├── requirements.txt # Python dependencies ├── .gitignore ├── README.md 
 
 ---
 
@@ -23,13 +24,25 @@ A lightweight web application built with Flask that performs basic mathematical 
 
 ## 🛠️ Getting Started
 
-### 1. Clone the Repository
+### 1. Steps
 
 ```bash
 git clone https://github.com/yourusername/flask-app.git
 cd flask-app
 python3 -m venv venv
-source venv/bin/activate  # For Windows: venv\Scripts\activate
+source venv/bin/activate      # On macOS/Linux
+# OR
+venv\Scripts\activate         # On Windows
 pip install -r requirements.txt
 python server.py
+
+
+Visit the app in your browser at:
+http://localhost:8080
+📡 API Endpoints
+Route	Description	Query Parameters
+/	Render homepage	–
+/sum	Adds two numbers	num1, num2 (floats)
+/sub	Subtracts two numbers	num1, num2 (floats)
+/mul	Multiplies two numbers	num1, num2 (floats)
 
